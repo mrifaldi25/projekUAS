@@ -1,0 +1,101 @@
+.notifikasi-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 120px 20px 40px; // geser ke bawah agar tidak kena navbar
+  background: #e93030;
+  border-radius: 10px;
+  min-height: 100vh;
+}
+
+.notifikasi-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222; // warna teks judul
+  }
+
+  textarea {
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #000; // warna teks isi textarea
+  }
+
+  .form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+
+      &:first-child {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      &.cancel-btn {
+        background-color: #ff6b6b; // merah soft
+        color: white;
+      }
+    }
+  }
+}
+
+.notifikasi-list {
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      color: #000; // warna teks kolom dan isi hitam
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    button {
+      margin: 0 4px;
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    button:first-child {
+      background-color: #2196f3; // biru edit
+      color: white;
+    }
+
+    button:last-child {
+      background-color: #ff6b6b; // merah soft delete
+      color: white;
+    }
+  }
+}
